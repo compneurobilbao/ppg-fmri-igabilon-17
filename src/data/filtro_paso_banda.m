@@ -31,7 +31,7 @@ function XFilt=filtro_paso_banda(X,Fs,fmin,fmax)
 %         fmax=aux;
 %     end
     
-    N = 1000; % Orden
+    N = 5; % Orden
    [ns,num_channels]=size(X);
    if ns<3*N
        N=floor(ns/3);

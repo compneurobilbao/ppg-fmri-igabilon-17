@@ -25,7 +25,11 @@ for i=1:length(files)
     % HRV series filtering
            
     
-    HRV_LF = filtro_paso_banda(resampled_HRV,Fs,0.04,0.15);
-    HRV_HF = filtro_paso_banda(resampled_HRV,Fs,0.15,0.23);
+    HRV_LF = filtro_paso_banda(HRV,Fs,0.04,0.15);
+    HRV_HF = filtro_paso_banda(HRV,Fs,0.15,0.23);
+
+    strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/HRV/maps/LF/',outfilename,'.nii.gz')
+    strcat('/home/asier/Desktop/scanphysio_igabilon/maps/LF/',outfilename,'.nii.gz')
 
 end  
+
