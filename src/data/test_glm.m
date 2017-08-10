@@ -5,9 +5,11 @@ addpath('/home/asier/matlab/NIfTI_tools')
 load(strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/alpha/alpha_HRV_all'))
 y = alpha_HRV_all
 
-
 % save(strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/energy/energy_HRV_LF_all'), 'energy_HRV_LF_all')
 % save(strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/energy/energy_HRV_HF_all'), 'energy_HRV_HF_all')
+% save(strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/alpha/alpha_HRV_all'), 'energy_HRV_HF_all')
+% save(strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/alpha/alpha_HRV_LF_all'), 'energy_HRV_HF_all')
+% save(strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/alpha/alpha_HRV_HF_all'), 'energy_HRV_HF_all')
 
 
 load(strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/fmri/mean_all'))
