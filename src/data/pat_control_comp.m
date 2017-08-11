@@ -20,11 +20,15 @@ result_con = generate_map( X_con, y_con );
 nii_base = load_nii('/home/asier/git/ppg-fmri-igabilon-17/data/raw/atlas_3000.nii');
 nii_result = nii_base;
 
-nii_result.img = result_pat;
+for i=1:max(nii_base.img(:))
+    nii_result.img(nii_base.img==i) = result_pat(i);
+end
 save_nii(nii_result, strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/maps/', ...
     'pat_fmri_', X_name, '_ppg_', y_name,'.nii'))
 
-nii_result.img = result_con;
+for i=1:max(nii_base.img(:))
+    nii_result.img(nii_base.img==i) = result_con(i);
+end
 save_nii(nii_result, strcat('/home/asier/git/ppg-fmri-igabilon-17/data/processed/maps/', ...
     'con_fmri_', X_name, '_ppg_', y_name,'.nii'))
 
