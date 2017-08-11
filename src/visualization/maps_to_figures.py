@@ -15,6 +15,7 @@ for file in os.listdir(input_path):
         statmap = nib.load(os.path.join(input_path, file))
 
         plt.plot_glass_brain(statmap, threshold=0, colorbar=True,
-                             cmap=matplotlib.pyplot.cm.autumn,
-                             display_mode='lyrz',
-                             output_file=os.path.join(input_path, file) + '.png')
+                             cmap=matplotlib.pyplot.cm.bwr,
+                             display_mode='lyrz', plot_abs=False,
+                             vmin = -1, vmax = 1,
+                             output_file=os.path.join(output_path, file[:-4]) + '.png')
