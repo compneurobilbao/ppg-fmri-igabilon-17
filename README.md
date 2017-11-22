@@ -3,6 +3,15 @@ ppg-fmri-igabilon-17
 
 Lewy Body and Parkinson Disease Dementia fMRI-ppg Heart-Brain dynamics￼Edit
 
+Docs
+------------
+Interpretation of heart rate variability via detrended fluctuation analysis and a b filter
+http://sci-hub.bz/http://aip.scitation.org/doi/pdf/10.1063/1.1562051
+
+Detrended Fluctuation Analysis of Heart Rate Variability in Normal and Growth-Restricted Fetuses 
+https://sci-hub.bz/https://www.karger.com/Article/Pdf/109266
+Controls: (alpha2-Hurst 0.887 +- 0.128)
+
 Project Organization
 ------------
 
